@@ -5,9 +5,13 @@
   --primary-white: #fff;
 }
 
+nav{
+  z-index: 2;
+}
+
 body
 {
-  font-family: "robots" sans-serif;
+  font-family: 'Roboto Condensed' sans-serif;
 }
 
 .logo{
@@ -36,4 +40,69 @@ nav ul li{
 
 .navbar-nav > li > a:hover, .navbar-nav > li a:focus{
   border-top:  0.1875rem solid #cccccc;
+}
+
+.header-wrapper
+{
+  position: relative;
+  background: url(background.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.main-info
+{
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--primary-white) !important;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.main-info h1{
+  text-transform: uppercase;
+}
+.typed-text
+{
+  color: var(--primary-white) !important;
+  font-size: 2rem;
+}
+
+.btn-main-offer
+{
+  border-radius: 0;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid #cccccc;
+  color: var(--primary-white) !important;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  padding: 0.625rem 0.75rem 0.50rem 0.75rem;
+}
+
+.btn-main-offer a:hover{
+  text-decoration: none;
+  transition:  .2s ease-in-out;
+}
+
+
+.tsparticles-canvas-el
+{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+@media(max-width: 768px){
+  .particles{
+    display: none;
+  }
 }
